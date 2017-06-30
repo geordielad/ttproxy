@@ -14,7 +14,7 @@
 
   var config = require('./config');
 
-  var sslCredentials {};
+  var sslCredentials = {};
 
   if (config.protocol == 'https') {
     var sslPrivateKey  = fs.readFileSync(config.sslKeys.key, 'utf8');
