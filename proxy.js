@@ -16,8 +16,6 @@
 
   var sslCredentials = {};
 
-console.log(config.port);
-
   if (config.protocol == 'https') {
     var sslPrivateKey  = fs.readFileSync(config.sslKeys.key, 'utf8');
     var sslCertificate = fs.readFileSync(config.sslKeys.cert, 'utf8');
