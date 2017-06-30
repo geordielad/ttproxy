@@ -84,7 +84,7 @@
         // 302 to a third party auth service, then that third party auth service redirects to a special proxy
         // url that will get a trusted ticket for a user.
 
-        res.redirect(authServer+'?host='+req.hostname+'&proto='+req.protocol+'&port='+((req.protocol == 'http') ? app.get('http_port') : app.get('https_port')));
+        res.redirect(authServer+'?host='+req.hostname+'&proto='+config.protocol+'&port='+config.port);
       } else {
         //console.log(util.inspect(req.headers, {showHidden: false, depth: null}))
 
