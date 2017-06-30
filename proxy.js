@@ -25,14 +25,14 @@
     var httpsServer = https.createServer(sslCredentials, app);
 
     var server = httpsServer.listen(config.port, function () {
-      console.log('HTTPS Auth server listening on port '+config.port);
+      console.log('HTTPS Auth server listening on port ',config.port);
     });
   }
   else {
     var httpServer = http.createServer(app);
 
     var server = httpServer.listen(config.port, function () {
-      console.log('HTTP Auth server listening on port '+config.port);
+      console.log('HTTP Auth server listening on port ',config.port);
     });
   }
 
