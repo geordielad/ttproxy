@@ -6,7 +6,7 @@ module.exports = {
         key: '.ssl/private-ssl-key.key',
         cert: '.ssl/public-ssl-cert.pem'
       },
-      port: process.env.PORT || 8000 // Any available port
+      port: process.env.PORT || 8000, // Any available port
       encUsernameFlag: false,
       encKeys: {
         key: '.enc/private-enc-key.key',
