@@ -1,0 +1,21 @@
+{
+  "name": "ttproxy",
+  "version": "0.1.1",
+  "description": "Tableau Trusted Ticket Requester and Pre-Auth Reverse Proxy",
+  "main": "proxy.js",
+  "scripts": {
+    "start": "node proxy.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Robin Cottiss",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "http-proxy": "^1.16.2",
+    "request": "^2.79.0",
+    "urlencode": "^1.1.0",
+    "ursa": "^0.9.4"
+  }
+}
