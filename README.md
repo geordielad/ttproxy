@@ -22,23 +22,29 @@ $ npm start
 
 1. Install this package and https://github.com/geordielad/tt-mock-auth-server.git
 2. Enable Unrestricted Trusted Tickets on Tableau Server and configure trust and gateway settings
-    - tabadmin stop
-    - tabadmin set wgserver.unrestricted_ticket true
-    - tabadmin set gateway.trusted 127.0.0.1
-    - tabadmin set gateway.public_host localhost
-    - tabadmin set gateway.public_port 8000
-    - tabadmin set wgserver.trusted_hosts "127.0.0.1"
-    - tabadmin config
-    - tabadmin start
+```bash
+    tabadmin stop
+    tabadmin set wgserver.unrestricted_ticket true
+    tabadmin set gateway.trusted 127.0.0.1
+    tabadmin set gateway.public_host localhost
+    tabadmin set gateway.public_port 8000
+    tabadmin set wgserver.trusted_hosts "127.0.0.1"
+    tabadmin config
+    tabadmin start
+```
 3. Create a user (default is rcottiss@tableau.rocks) on Tableau or edit config.js to use another user.
 4. Configure port and hostname settings for Proxy and Auth Server
     - Sample assumes http, localhost (for all Tableau, Proxy and Auth Server) and 8000 for the proxy and 8080 for the auth server.
 5.	In a command window
-    - cd tt-mock-auth-server
-    - npm start
+```bash
+    cd tt-mock-auth-server
+    npm start
+```
 6. In another command window
-    - cd ttproxy
-    - npm start
+```bash
+    cd ttproxy
+    npm start
+```
 7.	In your web browser go to proxy server public address (e.g. http://localhost:8000)
 
 ### config.js used in this package
