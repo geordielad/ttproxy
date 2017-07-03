@@ -8,9 +8,12 @@
   var fs = require('fs');
   var https = require('https');
   var http = require('http');
-  var ursa = require('ursa');
   var urlencode = require('urlencode');
   var util = require('util');
+
+// If we do not need ursa you can removeit from package.json before npm insall and the code here will not fail
+  var tryRequire = require('try-require');
+  var ursa = tryRequire('ursa');
 
   var config = require('./config');
 
